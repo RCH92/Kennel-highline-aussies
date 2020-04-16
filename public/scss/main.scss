@@ -671,6 +671,17 @@ display: none;
     }
 }   
 }
+.winList{
+    li{
+        @media screen and (max-width: 440px){
+          width: 70%;  
+          margin-left: 40px;
+            
+        }
+        
+
+    }
+}
 
 //orbit
 
