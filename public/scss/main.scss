@@ -76,9 +76,7 @@ h1{
     width: 80%;
     margin: auto;
     height: auto;
-    img{
-        
-    }
+    
 }
 #bannerImg{
     img{
@@ -108,8 +106,9 @@ h1{
         width: 60%;
         height: auto;
         @media screen and (max-width:440px){
-            width: 90%;
+            width: 90vw;
             height: auto;
+            margin: auto;
         }
     }
 }
@@ -399,7 +398,7 @@ h1{
         img{
             height: 350px;
             @media screen and (max-width:1199px){
-                width: 100%;
+                width: 100vw;
                 height: auto;
                 }
         }
@@ -415,7 +414,7 @@ h1{
         img{
             width: 60%;
             @media screen and (max-width:805px){
-                width: 80%;
+                width: 80vw;
                 height: auto;
             }
             
@@ -427,7 +426,7 @@ h1{
         img{
             width: 50%;
             @media screen and (max-width:805px){
-                width: 70%;
+                width: 70vw;
                 height: auto;
             }
         }
