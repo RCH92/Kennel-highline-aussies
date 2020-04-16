@@ -72,6 +72,7 @@ h1{
     justify-content: center;
     width: 80%;
     margin: auto;
+    height: auto;
 }
 #bannerImg{
     img{
@@ -102,6 +103,7 @@ h1{
         height: auto;
         @media screen and (max-width:440px){
             width: 90%;
+            height: auto;
         }
     }
 }
@@ -403,6 +405,7 @@ h1{
             width: 60%;
             @media screen and (max-width:805px){
                 width: 80%;
+                height: auto;
             }
             
         }
@@ -414,6 +417,7 @@ h1{
             width: 50%;
             @media screen and (max-width:805px){
                 width: 70%;
+                height: auto;
             }
         }
     }
@@ -669,6 +673,7 @@ display: none;
     }
     @media screen and (max-width: 440px){
         width: 100%;
+        height: auto;
         .orbit-next{
             right: -35px;
         }
