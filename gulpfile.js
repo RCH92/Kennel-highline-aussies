@@ -9,7 +9,7 @@ var sassPaths = [
 ];
 
 function sass() {
-  return gulp.src('public/s/css/*.scss')
+  return gulp.src('public/scss/*.scss')
     .pipe($.sass({
       includePaths: sassPaths,
       outputStyle: 'compressed' // if css compressed **file size**
@@ -36,7 +36,7 @@ function serve() {
   proxy: "localhost:5000" // makes a proxy for localhost:8080"
   });
 
-  gulp.watch("public/s/css/*.scss", sass);
+  gulp.watch("public/scss/*.scss", sass);
   gulp.watch("views/*.ejs").on('change', browserSync.reload);
   gulp.watch("views/partials/*.ejs").on('change', browserSync.reload);
   gulp.watch("public/js/*.js").on('change', browserSync.reload);

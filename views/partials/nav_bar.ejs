@@ -1,12 +1,15 @@
 <%- include('_banner_img') %>
 <div id="navBarBox">
-    <ul id="navList" class="menu dropdown align-center" data-dropdown-menu>
+    <div class="title-bar align-center" data-responsive-toggle="navList" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="navList"></button>
+        <!-- <div class="title-bar-title">Menu</div> -->
+    </div>
+    <ul id="navList" class="dropdown menu vertical medium-horizontal align-center" data-responsive-menu="drilldown medium-dropdown"
+    data-auto-height="true" data-animate-height="true">
         <li><a href="/" ">HOME</a></li>
-        <li class="divideLI"><div class="divideLine"></div></li>
         <li><a href="/about" >ABOUT US</a></li>
-        <li class="divideLI"><div class="divideLine"></div></li>
         <li class="dropMenu"><a href="/ourdogs" >OUR DOGS</a>
-            <ul class="menu">
+            <ul class="menu vertical">
                 <li><a href="/ourdogs/allie">Allie</a></li>
                 <li><a href="/ourdogs/lulu">Lulu</a></li>
                 <li><a href="/ourdogs/dela">Dela</a></li>
@@ -14,18 +17,16 @@
                 <li><a href="/ourdogs/shimmer">Shimmer</a></li>
             </ul>
         </li>
-        <li class="divideLI"><div class="divideLine"></div></li>
         <li class="dropMenu"><a href="/litters" >LITTERS</a>
-            <ul class="menu">
+            <ul class="menu vertical">
                 <li><a href="/litters/2020"><strong>!NEW! 2020 Upcsomming Litter</strong></a></li>
                 <!-- <li><a href=""></a></li> -->
                 <li><a href="/litters/development">Puppy Early Development</a></li>
                 <li><a href="/litters/past">Past Litters</a></li>
             </ul>
         </li>
-        <li class="divideLI"><div class="divideLine"></div></li>
         <li class="dropMenu"><a href="/bredby" >BRED BY</a>
-        <ul class="menu">
+        <ul class="menu vertical">
             <li><a href="/bredby/bacio">Bacio</a></li>
             <li><a href="/bredby/bogart">Bogart</a></li>
             <li><a href="/bredby/deacon">Deacon</a></li>
@@ -34,15 +35,14 @@
             <li><a href="/bredby/parker">Parker</a></li>
             <li><a href="/bredby/stout">Stout</a></li>
             <li><a href="/bredby/taylor">Taylor</a></li>
+            <li><a href="/bredby/wyatt">Wyatt</a></li>
             
             
         </ul>
         </li>
-        <li class="divideLI">|<div class="divideLine"></div></li>
+        <li class="divideLI"><p>|</p><div class="divideLine"></div></li>
         <li><a href="/gallery" >GALLERY</a></li>
-        <li class="divideLI"><div class="divideLine"></div></li>
         <li><a href="/info" >INFORMATION</a></li>
-        <li class="divideLI"><div class="divideLine"></div></li>
         <li ><a href="/contact">CONTACT</a></li>
 
     </ul>

@@ -6,13 +6,23 @@ $(document).ready(function () {
     $('.for1').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '.nav1',
         adaptiveHeight: false,
         // variableWidth: true,
         zindex: 1,
         // infinite: true
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    adaptiveHeight: true, 
+                    arrows: true,
+                    swipe: true
+                }
+            }
+        ]
     });
     $('.nav1').slick({
         slidesToShow: 5,
@@ -26,18 +36,41 @@ $(document).ready(function () {
         variableWidth: true,
         // adaptiveHeight: false,
         zindex: 100,
-        swipe: true
+        swipe: true,
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: "unslick"
+            }
+        ]
     });
     $('.for2').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '.nav2',
         adaptiveHeight: false,
         // variableWidth: true,
         zindex: 1,
         // infinite: true
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    adaptiveHeight: true, 
+                    arrows: true,
+                    swipe: true
+                }
+            }
+        ]
     });
     $('.nav2').slick({
         slidesToShow: 5,
@@ -51,18 +84,41 @@ $(document).ready(function () {
         variableWidth: true,
         // adaptiveHeight: false,
         zindex: 100,
-        swipe: true
+        swipe: true,
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: "unslick"
+            }
+        ]
     });
     $('.for3').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
         asNavFor: '.nav3',
         adaptiveHeight: false,
         // variableWidth: true,
         zindex: 1,
         // infinite: true
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    adaptiveHeight: true, 
+                    arrows: true,
+                    swipe: true
+                }
+            }
+        ]
     });
     $('.nav3').slick({
         slidesToShow: 5,
@@ -76,7 +132,20 @@ $(document).ready(function () {
         variableWidth: true,
         // adaptiveHeight: false,
         zindex: 100,
-        swipe: true
+        swipe: true,
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: "unslick"
+            }
+        ]
     });
 });
     var iframe1 = $('#player1');

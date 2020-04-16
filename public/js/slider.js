@@ -12,8 +12,19 @@ $(document).ready(function () {
         asNavFor: '.slider-nav',
         adaptiveHeight: false,
         // variableWidth: true,
-        zindex: 1
+        // lazyLoad: 'progressive',
+        zindex: 1,
         // infinite: true
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    adaptiveHeight: true, 
+                    arrows: true,
+                    swipe: true
+                }
+            }
+        ]
     });
     $('.slider-nav').slick({
         slidesToShow: 5,
@@ -26,8 +37,22 @@ $(document).ready(function () {
         centerPadding: '0px',
         variableWidth: true,
         // adaptiveHeight: false,
+        // lazyLoad: 'progressive',
         zindex: 100,
-        swipe: true
+        swipe: true,
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: "unslick"
+            }
+        ]
     });
     var currentPage = $('.sliderBox').data('dog');
     // getImagePaths(currentPage);

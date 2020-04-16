@@ -69,8 +69,18 @@ $('.slider-for').slick({
         asNavFor: '.slider-nav',
         adaptiveHeight: false,
         // variableWidth: true,
-        zindex: 1
+        zindex: 1,
         // infinite: true
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    adaptiveHeight: true, 
+                    arrows: true,
+                    swipe: true
+                }
+            }
+        ]
     });
     $('.slider-nav').slick({
         slidesToShow: 3,
@@ -84,6 +94,19 @@ $('.slider-for').slick({
         variableWidth: true,
         // adaptiveHeight: false,
         zindex: 100,
-        swipe: true
+        swipe: true,
+        responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: "unslick"
+            }
+        ]
     });
 </script>

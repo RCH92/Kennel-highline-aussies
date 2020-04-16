@@ -3,13 +3,18 @@
 @import 'settings';
 @import 'foundation';
 // @import 'motion-ui';
+
+// $color-scheme: (
+//     $background: rgb(182, 199, 136),
+//     $mainGreen: rgb(106, 156, 101)
+// );
 .clearfix{
     content: "";
     display: table;
     clear: both;
   }
   #mainContainer {
-    background-color: #7088B5;
+    background-color: rgb(182, 199, 136);
     display: flex;
     justify-content: center;
     height: auto;
@@ -24,6 +29,11 @@
     box-shadow: 0px 0px 20px #141414;
     margin: 50px 0px 50px 0px;
     height: fit-content;
+    @media screen and (max-width:1199px){
+        max-width: 100vw;
+        margin: 0px 0px;
+        box-shadow: unset;
+    }
 }
 h1{
     font-family: 'Great Vibes', cursive;
@@ -36,16 +46,20 @@ h1{
     }
     display: flex;
     justify-content: center;
-    color:#7088b5;
+    color:rgb(106, 156, 101);
     
 }
 .bannerText{
     display: flex;
     justify-content: center;
-    color:#7088b5;
+    color:rgb(106, 156, 101);
     h1{
         margin: 25px 0px;
         font-size: 8rem !important;
+        @media screen and (max-width:440px){
+            text-align: center;
+            font-size: 6rem !important;
+        }
     }
 }
 .center{
@@ -61,7 +75,11 @@ h1{
     img{
         max-width: 100%;
         width: 1200px;
-        height: 410px;
+        height: auto;
+        @media screen and (max-width:1199px){
+            width: 100vw;
+            height: auto;
+        }
     }
     // display: flex;
     // max-width: 100%;
@@ -80,6 +98,9 @@ h1{
         max-width: 100%;
         width: 60%;
         height: auto;
+        @media screen and (max-width:440px){
+            width: 90%;
+        }
     }
 }
 
@@ -92,6 +113,13 @@ h1{
         margin: 48px 160px;
         text-align: justify;
         color: #626569;
+        @media screen and (max-width:805px){
+            margin: 48px 80px;
+        }
+        @media screen and (max-width:440px){
+            margin: 48px 7%;
+        }
+
     }
     h4{
         color: #626569;
@@ -112,9 +140,10 @@ h1{
         text-align: justify;
         color: #626569;
     }
-    li::before {content: "•"; color:#7088b5;
+    li::before {content: "•"; color:rgb(106, 156, 101);
         display: inline-block; width: 1em;
         margin-left: -1em}
+       
     h3{
         font-family: 'Open Sans', sans-serif;
         font-size: 22px;
@@ -123,32 +152,62 @@ h1{
         margin: 48px 160px;
         text-align: center;
         color: black;
+        @media screen and (max-width:440px){
+            margin: 48px 10%;
+        }
     }
+}
+.slick-prev:before,.slick-next:before{
+    color:rgb(106, 156, 101);
 }
 
 .sticky {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: inherit;
     z-index: 9999;
   }
+  .title-bar{
+        background: rgb(106, 156, 101);
+        @media screen and (max-width:1199px){
+        width: 100vw;
+        }
+    }
 #navList{
     display: flex;
     justify-content: space-around;
     height: auto;
     padding: 6px 3px;
     text-align: center;
-    background: #869bbc;
+    background: rgb(106, 156, 101);
     list-style: none;
     margin: 0;
     z-index: 10000;
+    @media screen and (max-width:1199px){
+        width: 100vw;
+        }
+    .is-drilldown{
+        overflow: hidden;
+    }
+    .drilldown, a{
+        background:rgb(106, 156, 101);
+    }
+    .accordion-menu, a::after {
+        right: .1rem !important;
+    }
+    .dropMenu, a::after{
+        border-color: ghostwhite transparent transparent;
+    }
 
-   
     .divideLI{
         margin: 1px;
         min-width: 1px;
+        display: none;
     //     background: whitesmoke;
-    color: #869bbc;
+    p{
+      color: rgb(106, 156, 101);  
+    }
+    
     }
 
     .divideLine{
@@ -159,7 +218,7 @@ h1{
     }
     li{
         text-align: center;
-        background: #869bbc;
+        background: rgb(106, 156, 101);
         a{
             color: whitesmoke;
             font-family: 'EB Garamond', serif;
@@ -208,7 +267,7 @@ h1{
             margin: 2px 0px;
             text-align: center;
             font-size: 14px;
-            color: #7088b5;
+            color: rgb(106, 156, 101);
             a{
                 font-size: 14px;
             }
@@ -296,13 +355,21 @@ h1{
         flex-direction: row;
         justify-content: space-evenly;
         margin: 40px 0px;
+        @media screen and (max-width:440px){
+            flex-direction: column;
+
+        }
 
         .sireDamElement{
             width: 30%;
             text-align: center;
+            @media screen and (max-width:440px){
+                width: 70%;
+                margin: auto;
+            }
             h1{
                 font-size: 35px;
-                color:#7088b5;
+                color:rgb(106, 156, 101);
             }
             h3{
                 font-size: 17px;
@@ -316,6 +383,10 @@ h1{
     .fixedSize{
         img{
             height: 350px;
+            @media screen and (max-width:1199px){
+                width: 100%;
+                height: auto;
+                }
         }
     }
 .soloDogPage{
@@ -328,6 +399,10 @@ h1{
         justify-content: center;
         img{
             width: 60%;
+            @media screen and (max-width:805px){
+                width: 80%;
+            }
+            
         }
     }
     .dogSecondaryImg{
@@ -335,6 +410,9 @@ h1{
         justify-content: center;
         img{
             width: 50%;
+            @media screen and (max-width:805px){
+                width: 70%;
+            }
         }
     }
     .dogTitle{
@@ -353,11 +431,14 @@ h1{
             margin: 48px 160px;
             text-align: justify;
             color: #626569; 
+            @media screen and (max-width:440px){
+                margin: 48px 7%;
+            }
         }
         h1{
             text-align: center;
             font-size: 50px;
-            color:#7088b5;
+            color:rgb(106, 156, 101);
         }
         h4{
             text-align: center;
@@ -379,6 +460,12 @@ h1{
         .offspringElement{
             display: flex;
             justify-content: space-evenly;
+            @media screen and (max-width:1199px){
+                width: 100vw;
+                }
+                
+                
+                
         }
         
         .offspringSire{
@@ -386,9 +473,12 @@ h1{
             text-align: center;
             // color: red;
             margin:0px;
+            @media screen and (max-width:440px){
+                    width: 70%;
+                }
             h1{
                 font-size: 35px;
-                color:#7088b5;
+                color:rgb(106, 156, 101);
             }
             h3{
                 font-size: 17px;
@@ -404,8 +494,16 @@ h1{
             flex-direction: row;
             justify-content: space-evenly;
             margin-top: 20px;
+            @media screen and (max-width:440px){
+                flex-direction: column;
+                
+            }
             .pupper{
                 width: 27%;
+                @media screen and (max-width:440px){
+                    width: 70%;
+                    margin: auto;
+                }
                 h3{
                     font-size: 12px;
                     margin: auto;
@@ -420,10 +518,13 @@ h1{
         margin-top: -30px;
     }
 }
+.is-submenu-item{
+    width: 100%;
+}
 .lineTop{
         margin: auto;
         width: 70%;
-        border-top:1px #7088b5  solid ;
+        border-top:1px rgb(106, 156, 101)  solid ;
         h1{
             padding-top: 60px;
         }
@@ -437,7 +538,7 @@ h1{
     width: 40%;
     height: 1px;
     padding-bottom: 40px;
-    border-bottom:1px #7088b5 solid;
+    border-bottom:1px rgb(106, 156, 101) solid;
     margin: auto;
 }
 #offSpringFlex{
@@ -446,7 +547,7 @@ h1{
         margin: 0px;
         #offspringLine{
             width: 40%;
-            border-bottom:1px #7088b5 solid;
+            border-bottom:1px rgb(106, 156, 101) solid;
             h1{
                 margin: 0px;
             }
@@ -483,13 +584,18 @@ h1{
 //             margin: auto;
 //         }
 //         button::before{
-//             color: #7088b5
+//             color: rgb(106, 156, 101)
 //         }
 // }
 .slider-for{
     width: 60%;
     margin: auto;
     margin-bottom: 40px;
+    @media screen and (max-width:805px){
+        width: 80%;
+        margin: auto;
+    }
+    
     img{
         max-height: 550px;
         // height: 600px;
@@ -498,7 +604,7 @@ h1{
     }
 }
 // .slick-prev{
-//       color: #7088b5 !important ; 
+//       color: rgb(106, 156, 101) !important ; 
 //     }
 .sliderNavBox{
     width: 80%;
@@ -507,25 +613,48 @@ h1{
     padding: 20px;
     
 }
+@media screen and (max-width: 440px){
+        
+     .sliderNavBox{
+display: none;
+}   
+    }
+
 .slider-nav{
     padding: 10px;
     margin: auto;
     
-    
+    @media screen and (max-width: 440px){
+        display: none;
+        
+    }
     button::before{
-        color: #7088b5
+        color: rgb(106, 156, 101)
     }
     // box-shadow: 0px 0px 20px #141414;
     
-    // border: 1px #7088b5 solid;
+    // border: 1px rgb(106, 156, 101) solid;
     img{
         padding: 5px 10px;
         max-height: 200px;
         margin: auto;
         // width: 30%;
-        
+        @media screen and (max-width: 440px){
+            display: none;
+            
+        }
     }
 }
+
+ @media screen and (max-width: 440px){
+    .slide{ 
+    display: none;
+    img{
+        display: none;
+    }
+}   
+}
+
 //orbit
 
 .orbitBox{
@@ -534,6 +663,25 @@ h1{
     margin: auto;
     background: lightgrey;
     .orbit-previous, .orbit-next{
-        color:#7088b5;
+        color:rgb(106, 156, 101);
     }
+    @media screen and (max-width: 440px){
+        width: 100%;
+        .orbit-next{
+            right: -35px;
+        }
+        .orbit-previous{
+            left: -35px;
+        }
+    }
+}
+.orbit-image{
+    @media screen and (max-width: 440px){
+        // width: 320px;
+        // height: auto;
+        
+    }
+}
+.orbit-figure{
+    margin: auto;
 }

@@ -9,6 +9,8 @@
         </div> -->
                 <div class="sliderBox" data-dog='lulu'>
                     <div class="slider-for">
+                        <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_slider_main0.jpg" alt=""></div>
+                        <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_slider_main1.jpg" alt=""></div>
                         <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_0.jpg" alt=""></div>
                         <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_1.jpg" alt=""></div>
                         <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_2.jpg" alt=""></div>
@@ -27,6 +29,8 @@
                 
                 <div class="sliderNavBox">
                     <div class="slider-nav">
+                        <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_slider_main0.jpg" alt=""></div>
+                        <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_slider_main1.jpg" alt=""></div>
                         <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_0.jpg" alt=""></div>
                         <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_1.jpg" alt=""></div>
                         <div><img src="/images/bred_by/wyatt/wyatt_slider/wyatt_2.jpg" alt=""></div>
@@ -80,8 +84,18 @@
             asNavFor: '.slider-nav',
             adaptiveHeight: false,
             // variableWidth: true,
-            zindex: 1
+            zindex: 1,
             // infinite: true
+            responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    adaptiveHeight: true, 
+                    arrows: true,
+                    swipe: true
+                }
+            }
+        ]
         });
         $('.slider-nav').slick({
             slidesToShow: 3,
@@ -95,6 +109,19 @@
             variableWidth: true,
             // adaptiveHeight: false,
             zindex: 100,
-            swipe: true
+            swipe: true,
+            responsive: [
+            {
+                breakpoint: 890,
+                settings: {
+                    
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 440,
+                settings: "unslick"
+            }
+        ]
         });
     </script>

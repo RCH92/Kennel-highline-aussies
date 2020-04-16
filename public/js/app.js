@@ -2,6 +2,10 @@ $(document).ready(function () {
     // getJson();
     // navActive();
     // console.log("TEST");
+    $('.is-drilldown').css('height', '1px');
+    
+    // $('.is-drilldown').show(1);
+    
 })
 $(document).foundation();
 // When the user scrolls the page, execute myFunction
