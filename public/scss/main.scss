@@ -69,6 +69,10 @@ h1{
 }
 #homeImageBox{
     height: auto;
+    @media screen and (max-width: 1199px){
+        width: 80vw;
+        max-height: 1000px;
+    }
 }
 #homeImg, #aboutImage, #contactImage{
     display: flex;
@@ -76,6 +80,10 @@ h1{
     width: 80%;
     margin: auto;
     height: auto;
+    @media screen and (max-width: 1199px){
+        width: 100%;
+        
+    }
     
 }
 #bannerImg{
@@ -411,11 +419,15 @@ h1{
     .dogMainImg{
         display: flex;
         justify-content: center;
+        @media screen and (max-width:805px){
+            width: 80vw;
+            
+        }
         img{
             width: 60%;
             @media screen and (max-width:805px){
                 width: 80vw;
-                height: auto;
+                
             }
             
         }
