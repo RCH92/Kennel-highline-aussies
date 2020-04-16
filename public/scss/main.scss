@@ -70,6 +70,8 @@ h1{
 #homeImg, #aboutImage, #contactImage{
     display: flex;
     justify-content: center;
+    width: 80%;
+    margin: auto;
 }
 #bannerImg{
     img{
