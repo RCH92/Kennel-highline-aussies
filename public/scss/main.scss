@@ -434,14 +434,16 @@ h1{
         }
     }
     .dogSecondaryImg{
-        display: flex;
-        justify-content: center;
-        img{
-            width: 50%;
-            @media screen and (max-width:805px){
+        width: 60%;
+        margin: auto;
+        @media screen and (max-width:805px){
                 width: 70vw;
                 height: auto;
             }
+        
+        img{
+            width: 100%;
+            margin: auto;
         }
     }
     .dogTitle{
