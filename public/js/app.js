@@ -4,7 +4,7 @@ $(document).ready(function () {
     // console.log("TEST");
     $('.is-drilldown').css('height', '1px');
     
-    // $('.is-drilldown').show(1);
+    $('.is-drilldown').show(1);
     
 })
 $(document).foundation();
@@ -27,5 +27,5 @@ function myFunction() {
 }
 $(".dogBox").on("click", "img", function(){
   document.location.href = $(this).data("links");
-  console.log($(this).data("links"));
+  // console.log($(this).data("links"));
 });

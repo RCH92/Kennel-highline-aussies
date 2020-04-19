@@ -386,7 +386,13 @@ h1{
         margin: 40px 0px;
         @media screen and (max-width:440px){
             flex-direction: column;
-
+            div:last-child{
+                h1{
+                    padding-top: 20px;
+                    border-top: #626569 1px solid;
+                    margin-top: 20px;
+                }
+            }
         }
 
         .sireDamElement{
