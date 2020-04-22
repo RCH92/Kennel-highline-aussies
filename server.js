@@ -3,6 +3,7 @@ var expressLayouts = require('express-ejs-layouts');
 var app = express();
 var path = require('path');
 var PORT= process.env.PORT || 5000;
+var lozad = require('lozad');
 
 // Ejs
 // ================================================================================================
