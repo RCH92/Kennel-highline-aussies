@@ -37,7 +37,7 @@ $(document).ready(function () {
         centerPadding: '0px',
         variableWidth: true,
         // adaptiveHeight: false,
-        // lazyLoad: 'progressive',
+        lazyLoad: 'progressive',
         zindex: 100,
         swipe: true,
         responsive: [
