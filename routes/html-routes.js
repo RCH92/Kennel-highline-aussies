@@ -28,8 +28,11 @@ router.get('/litters/new', (req, res) => res.render('lulu_litter_clarke.ejs'));
 router.get('/litters/2020', (req, res) => res.render('lulu_litter.ejs'));
 router.get('/litters/2021/lulu-clarke', (req, res) => res.render('lulu_litter_clarke.ejs'));
 router.get('/litters/development', (req, res) => res.render('litter_raising.ejs'));
+router.get('/litters/future', (req, res) => res.render('planned_litters.ejs'));
 router.get('/ourdogs/shimmer', (req, res) => res.render('shimmer.ejs'));
 router.get('/litters/past', (req, res) => res.render('past_litters.ejs'));
+router.get('/litters/jasper-mercy', (req, res) => res.render('jasper_mercy_litter.ejs'));
+router.get('/litters/shimmer-bobble', (req, res) => res.render('shimmer_bobble_litter.ejs'));
 router.get('/stout', (req, res) => res.render('stout.ejs'));
 router.get('*',function (req, res) {
     res.redirect('/');
